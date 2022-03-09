@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 import { useMixpanel } from '@/context/Mixpanel.context'
 import Meta from '@/components/Meta'
@@ -16,11 +16,17 @@ import styles from '@/styles/Home/Home.module.scss'
 
 export default function Home() {
 	const { track, track_links } = useMixpanel()
+	const [hideBanner, setHideBanner] = useState(true)
 	const sections = useRef<Record<string, HTMLDivElement | null>>({})
 
 	useEffect(() => {
 		track_links('.track', 'Link clicked')
 	}, [track_links])
+
+	useEffect(() => {
+		const hideBanner = localStorage.getItem('hideBanner') === 'true'
+		if (!hideBanner) setHideBanner(false)
+	}, [])
 
 	const scrollToElement = (id: string) => {
 		const element = sections.current[id]
@@ -29,9 +35,29 @@ export default function Home() {
 		element.scrollIntoView({ behavior: 'smooth' })
 	}
 
+	const closeBanner = () => {
+		localStorage.setItem('hideBanner', 'true')
+		setHideBanner(true)
+	}
+
 	return (
 		<div className={styles.wrapper}>
 			<Meta title="Astrano | Invest in human potential" />
+
+			{!hideBanner && (
+				<div className={styles.banner}>
+					<p className={styles.bannerText}>
+						Our first beta has concluded. Thanks to everyone who
+						participated!
+					</p>
+					<button
+						onClick={closeBanner}
+						className={styles.bannerButton}
+					>
+						Close
+					</button>
+				</div>
+			)}
 
 			<Navbar scrollToElement={scrollToElement} />
 

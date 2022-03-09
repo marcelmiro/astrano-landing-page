@@ -25,7 +25,7 @@ const features = [
 		icon: <BlocksVector />,
 	},
 	{
-		title: 'Engage with your followers',
+		title: 'Engage with supporters',
 		desc: 'Build an economy on top of your community. They support you by buying your token. You give back by letting them exchange your token for rewards. Everyone wins.',
 		icon: <WitnessVector />,
 	},
