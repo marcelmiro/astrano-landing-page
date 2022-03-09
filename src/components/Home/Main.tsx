@@ -2,7 +2,7 @@ import classNames from 'classnames'
 
 import { mainProfiles } from '@/config'
 import MainProfileCard from '@/components/Home/MainProfileCard'
-
+import ArrowRight from '@/public/arrow_head_right.svg'
 import styles from '@/styles/Home/Main.module.scss'
 
 export default function Main() {
@@ -20,7 +20,8 @@ export default function Main() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					Join waitlist
+					<span>Join waitlist</span>
+					<ArrowRight />
 				</a>
 			</div>
 
