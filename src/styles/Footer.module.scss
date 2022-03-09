@@ -1,0 +1,137 @@
+.container {
+	margin-top: 18.75rem;
+	> * {
+		position: relative;
+		z-index: 1;
+	}
+}
+
+.content {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.info {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 2.25rem;
+	max-width: 15.625rem;
+	p {
+		color: rgb(var(--primary-400));
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 2;
+	}
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 0.625rem;
+	svg {
+		width: 2rem;
+	}
+	span {
+		color: rgb(var(--primary));
+		font-size: 1.125rem;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+	}
+}
+
+.linkContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 3.5rem;
+}
+
+.linkGroup {
+	flex: 1 1 0;
+	display: flex;
+	flex-flow: column nowrap;
+	text-align: left;
+}
+
+.linkTitle {
+	color: rgb(var(--primary));
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 2.25rem;
+	white-space: nowrap;
+}
+
+.link {
+	color: rgb(var(--primary-200));
+	font-size: 0.875rem;
+	font-weight: 400;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: color 0.1s;
+	&:hover {
+		color: rgb(var(--primary-400));
+	}
+}
+
+.hr {
+	border: 0.063rem solid rgb(var(--primary-600));
+	margin: 2.375rem 0 1.625rem;
+}
+
+.copyright {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	span {
+		color: rgb(var(--primary-200));
+		font-size: 0.875rem;
+		font-weight: 400;
+	}
+}
+
+@media screen and (max-width: 952px) {
+	.linkContainer {
+		gap: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 822px) {
+	.content {
+		gap: 2.25rem;
+	}
+	.content {
+		flex-flow: column nowrap;
+	}
+	.linkContainer {
+		align-self: stretch;
+	}
+	.linkTitle {
+		margin-bottom: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.content {
+		align-items: center;
+		text-align: center;
+	}
+	.linkContainer {
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+	.info {
+		align-items: center;
+	}
+	.linkContainer {
+		align-items: center;
+	}
+	.linkGroup {
+		align-items: center;
+		gap: 0.625rem;
+	}
+	.linkTitle {
+		margin-bottom: 0.625rem;
+	}
+}

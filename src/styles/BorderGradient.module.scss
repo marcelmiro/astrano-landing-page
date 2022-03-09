@@ -1,0 +1,11 @@
+.container {
+	border: 0.25rem solid transparent;
+	background: linear-gradient(rgb(var(--background)), rgb(var(--background)))
+			padding-box,
+		linear-gradient(
+				140deg,
+				rgb(var(--blue-accent-350)),
+				rgb(var(--purple-accent-500))
+			)
+			border-box;
+}

@@ -1,0 +1,13 @@
+.container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 852px) {
+	.container {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		gap: 3.5rem 2rem;
+	}
+}

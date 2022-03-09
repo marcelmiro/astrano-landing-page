@@ -1,0 +1,100 @@
+.container {
+	width: 19rem;
+	min-width: 11rem;
+}
+
+.title {
+	color: rgb(var(--primary));
+	font-weight: 400;
+	font-size: 1.375rem;
+	margin-top: 0.75rem;
+	text-align: center;
+}
+
+.card {
+	height: 27.5rem;
+	border-radius: 1rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner {
+	opacity: 0.9;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.info {
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+	transform: translateX(-50%);
+	min-width: 50%;
+	background-color: rgba(var(--background), 0.6);
+	backdrop-filter: blur(0.25rem);
+	border-radius: 100vmax;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	gap: 0.625rem;
+	z-index: 1;
+	padding: 0.625rem 0.875rem;
+	box-sizing: border-box;
+}
+
+.logo {
+	width: 1.75rem;
+	height: 1.75rem;
+	border-radius: 100%;
+}
+
+.name {
+	color: rgb(var(--primary));
+	font-weight: 400;
+	font-size: 0.75rem;
+	white-space: nowrap;
+}
+
+.price {
+	margin-top: 0.0625rem;
+	color: rgb(var(--primary-400));
+	font-weight: 400;
+	font-size: 0.625rem;
+}
+
+@media screen and (max-width: 1052px) {
+	.container {
+		width: 31%;
+	}
+	.card {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 852px) {
+	.container {
+		width: 100%;
+		max-width: 19rem;
+	}
+}
+
+@media screen and (max-width: 752px) {
+	.container {
+		max-width: 16rem;
+	}
+	.card {
+		height: 23.25rem;
+	}
+}
+
+@media screen and (max-width: 652px) {
+	.container {
+		width: 100%;
+	}
+}
