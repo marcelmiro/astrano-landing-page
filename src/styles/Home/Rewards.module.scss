@@ -75,6 +75,7 @@
 	align-items: center;
     text-align: center;
 	border: 0.0625rem solid rgb(var(--purple-accent));
+	box-shadow: 0 0 1rem -0.5rem rgba(var(--purple-accent-300), 0.8);
     &:not(.rewardPrimaryAction) {
         pointer-events: none;
     }
@@ -111,6 +112,9 @@
 			font-weight: 500;
 		}
 	}
+	.mobileTitle {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 852px) {
@@ -118,12 +122,14 @@
 		flex-direction: column;
 	}
 	.content {
-		order: -1;
 		width: 100%;
 		max-width: 37.25rem;
 	}
 	.title {
 		text-align: center;
+	}
+	.title:not(.mobileTitle) {
+		display: none;
 	}
 }
 

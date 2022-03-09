@@ -56,7 +56,10 @@ export default function Home() {
 
 			<GetStarted className={styles.section} />
 
-			<Footer scrollToElement={scrollToElement} />
+			<Footer
+				scrollToElement={scrollToElement}
+				ref={(el) => (sections.current.footer = el)}
+			/>
 		</div>
 	)
 }

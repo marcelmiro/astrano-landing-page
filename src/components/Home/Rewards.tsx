@@ -64,20 +64,26 @@ export default forwardRef(function Rewards(
 	ref: ForwardedRef<HTMLDivElement>
 ) {
 	return (
-		<section className={classNames(styles.container, className)} ref={ref}>
-			<BorderGradient className={styles.banner}>
-				<SkeletonImage src="/lilt_banner.png" alt="Banner LILT" />
-			</BorderGradient>
+		<section className={className} ref={ref}>
+			<h2 className={classNames(styles.title, styles.mobileTitle)}>
+				<strong>Rewards</strong>
+			</h2>
 
-			<div className={styles.content}>
-				<h2 className={styles.title}>
-					<strong>Rewards</strong>
-				</h2>
+			<div className={styles.container}>
+				<BorderGradient className={styles.banner}>
+					<SkeletonImage src="/lilt_banner.png" alt="Banner LILT" />
+				</BorderGradient>
 
-				<div className={styles.rewardList}>
-					{rewards.map((reward, index) => (
-						<Reward {...reward} key={index} />
-					))}
+				<div className={styles.content}>
+					<h2 className={styles.title}>
+						<strong>Rewards</strong>
+					</h2>
+
+					<div className={styles.rewardList}>
+						{rewards.map((reward, index) => (
+							<Reward {...reward} key={index} />
+						))}
+					</div>
 				</div>
 			</div>
 		</section>

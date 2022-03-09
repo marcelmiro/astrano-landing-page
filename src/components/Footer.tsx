@@ -1,3 +1,4 @@
+import { forwardRef, ForwardedRef } from 'react'
 import classNames from 'classnames'
 
 import AstranoLogo from '@/public/logo.svg'
@@ -7,11 +8,14 @@ interface FooterProps {
 	scrollToElement(id: string): void
 }
 
-export default function Footer({ scrollToElement }: FooterProps) {
+export default forwardRef(function Footer(
+	{ scrollToElement }: FooterProps,
+	ref: ForwardedRef<HTMLDivElement>
+) {
 	const currentYear = new Date().getFullYear()
 
 	return (
-		<footer className={styles.container}>
+		<footer className={styles.container} ref={ref}>
 			<div className={styles.content}>
 				<div className={styles.info}>
 					<div className={styles.logo}>
@@ -100,4 +104,4 @@ export default function Footer({ scrollToElement }: FooterProps) {
 			</div>
 		</footer>
 	)
-}
+})
