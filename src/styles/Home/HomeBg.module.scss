@@ -3,8 +3,8 @@
 	height: 45rem;
 	border-radius: 100vmax;
 	position: absolute;
-	top: -11%;
-	right: -20%;
+	top: -7%;
+	right: -17%;
 	background: radial-gradient(
 		50% 50% at 50% 50%,
 		rgba(var(--blue-accent), 0.4) 0%,
@@ -18,7 +18,7 @@
 	height: 41.25rem;
 	border-radius: 100vmax;
 	position: absolute;
-	top: -11%;
+	top: -7%;
 	left: 28%;
 	background: radial-gradient(
 		50% 50% at 50% 50%,
@@ -31,11 +31,8 @@
 @media screen and (max-width: 1452px) {
 	.bg1 {
 		width: 41.25rem;
-		top: -11%;
-		right: -20%;
 	}
 	.bg2 {
-		top: -11%;
 		left: 22%;
 	}
 }
@@ -47,10 +44,11 @@
 }
 @media screen and (max-width: 1052px) {
 	.bg1 {
-		right: -24%;
+		top: -8%;
+		right: -19%;
 	}
 	.bg2 {
-		left: 12%;
+		left: 14%;
 	}
 }
 @media screen and (max-width: 952px) {
@@ -59,57 +57,64 @@
 		left: 50%;
 	}
 }
+@media screen and (max-width: 852px) {
+	.bg1 {
+		top: -7%;
+	}
+}
 @media screen and (max-width: 752px) {
 	.bg1 {
 		opacity: 0.8;
 	}
 	.bg2 {
-		left: 8%;
+		left: 12%;
 	}
 }
 @media screen and (max-width: 652px) {
-	.bg1,
-	.bg2 {
-		top: -10%;
-		left: auto;
-	}
 	.bg1 {
-		right: -72%;
+		top: -7%;
+		right: -56%;
+		opacity: 0.65;
 	}
 	.bg2 {
-		right: -42%;
+		top: -6%;
+		left: 2%;
+		opacity: 0.65;
 	}
 }
 @media screen and (max-width: 612px) {
 	.bg1 {
-		right: -82%;
+		top: -6%;
+		left: 54%;
 	}
 }
 @media screen and (max-width: 552px) {
-	.bg1,
+	.bg1 {
+		left: 48%;
+	}
 	.bg2 {
-		top: -11%;
+		top: -7%;
+		left: -24%;
 	}
 }
 @media screen and (max-width: 520px) {
-	.bg1,
-	.bg2 {
-		top: -10%;
+	.bg1 {
+		top: -7%;
+		left: 66%;
+		transform: translate(-50%);
+		z-index: 0;
 	}
-}
-@media screen and (max-width: 426px) {
-	.container {
-		opacity: 0.2;
+	.bg2 {
+		top: -7%;
+		left: -36%;
 	}
 }
 @media screen and (max-width: 354px) {
 	.bg1 {
 		right: auto;
-		left: -16%;
+		left: 8%;
 	}
 	.bg2 {
-		opacity: 0.4;
-		top: -8%;
 		right: auto;
 		left: -70%;
 	}

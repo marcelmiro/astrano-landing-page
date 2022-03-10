@@ -98,10 +98,16 @@ export default forwardRef(function Footer(
 					</div>
 				</div>
 			</div>
+
 			<hr className={styles.hr} />
+
 			<div className={styles.copyright}>
 				<span>© {currentYear} ASTRANO LLC</span>
 				<span>All rights reserved.</span>
+			</div>
+
+			<div className={styles.bgContainer}>
+				<div className={styles.bg} />
 			</div>
 		</footer>
 	)

@@ -91,6 +91,33 @@
 	}
 }
 
+.bgContainer {
+	width: 100vw;
+    height: 30rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+	transform: translateX(-50%);
+    overflow: hidden;
+	z-index: 0;
+}
+
+.bg {
+	width: 78.75rem;
+	height: 62.5rem;
+	border-radius: 100%;
+	position: absolute;
+	bottom: -112%;
+	left: 42%;
+    transform: translateX(-50%);
+	background: radial-gradient(
+		50% 50% at 50% 50%,
+		rgba(var(--blue-accent), 0.2) 0%,
+		rgba(var(--blue-accent), 0.12) 40%,
+		rgba(var(--blue-accent), 0) 100%
+	);
+}
+
 @media screen and (max-width: 952px) {
 	.linkContainer {
 		gap: 2.5rem;
@@ -133,5 +160,12 @@
 	}
 	.linkTitle {
 		margin-bottom: 0.625rem;
+	}
+}
+
+@media screen and (max-width: 402px) {
+	.copyright {
+		flex-direction: column;
+		text-align: center;
 	}
 }

@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 import { useMixpanel } from '@/context/Mixpanel.context'
 import Meta from '@/components/Meta'
 import Navbar from '@/components/Navbar'
-// import Bg from '@/components/Home/Bg'
+import Bg from '@/components/Home/Bg'
 import Main from '@/components/Home/Main'
 import Features from '@/components/Home/Features'
 import Creators from '@/components/Home/Creators'
@@ -61,7 +61,7 @@ export default function Home() {
 
 			<Navbar scrollToElement={scrollToElement} />
 
-			{/* <Bg /> */}
+			<Bg />
 
 			<Main />
 
