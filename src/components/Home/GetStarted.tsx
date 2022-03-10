@@ -27,7 +27,14 @@ export default function GetStarted({ className }: GetStartedProps) {
 					>
 						Join waitlist
 					</a>
-					<button className={styles.button}>Refer a friend</button>
+					<a
+						className={classNames(styles.button, 'track')}
+						href="https://refer.astrano.io/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						Refer a friend
+					</a>
 				</div>
 			</div>
 		</section>

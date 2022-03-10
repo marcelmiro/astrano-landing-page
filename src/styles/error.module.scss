@@ -1,0 +1,71 @@
+.container {
+	margin: 20vh auto 0;
+	max-width: 28.75rem;
+    padding: 0 1rem;
+    box-sizing: content-box;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	text-align: center;
+    overflow: hidden;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 9.75rem;
+	color: rgb(var(--primary-50));
+}
+
+.message {
+	margin-top: 1.75rem;
+	font-weight: 400;
+	font-size: 1rem;
+	color: rgb(var(--primary-400));
+}
+
+.actions {
+	margin-top: 2.625rem;
+	display: flex;
+	flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+	gap: 1.25rem;
+}
+
+.button {
+	height: 2.375rem;
+	padding: 0 1.25rem;
+	box-sizing: border-box;
+	border: 0.125rem solid rgb(var(--purple-accent));
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(var(--primary));
+	font-weight: 400;
+	font-size: 0.875rem;
+    text-align: center;
+	transition: background-color 0.16s;
+	&:not(.primaryButton):hover {
+		background-color: rgb(var(--purple-accent));
+	}
+}
+.primaryButton {
+	border: none;
+	background-color: rgb(var(--purple-accent));
+	&:hover {
+		background-color: rgb(var(--purple-accent-500));
+	}
+}
+
+@media screen and (max-width: 652px) {
+    .title {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width: 652px) {
+    .title {
+        font-size: 6rem;
+    }
+}
