@@ -27,6 +27,9 @@
 	line-height: 1.75;
 	width: 32.5rem;
 	margin: 1.125rem 0 2rem;
+	div {
+		display: inline;
+	}
 }
 
 .button {
@@ -55,7 +58,8 @@
 		height: 0.875rem;
 		transition: transform 0.2s;
 	}
-	svg, path {
+	svg,
+	path {
 		fill: rgb(var(--primary));
 	}
 }
@@ -80,6 +84,10 @@
 		rgba(var(--blue-accent), 0.08) 40%,
 		rgba(var(--blue-accent), 0) 100%
 	);
+}
+
+.typewriterWrapper {
+	font-style: italic;
 }
 
 @media screen and (max-width: 1052px) {
@@ -133,7 +141,7 @@
 		max-width: 28.438rem;
 	}
 	.desc {
-		max-width: 24.875rem;
+		max-width: 25.75rem;
 	}
 	.profileContainer {
 		margin-top: 6.25rem;
@@ -146,9 +154,6 @@
 	.desc {
 		width: 100%;
 	}
-	.desc {
-		max-width: 24rem;
-	}
 }
 
 @media screen and (max-width: 520px) {
@@ -160,6 +165,9 @@
 	}
 	.desc {
 		margin: 2.5rem auto 3rem;
+		div {
+			display: block;
+		}
 	}
 }
 

@@ -2,6 +2,15 @@ export const baseUrl = 'https://astrano.io'
 
 export const maxMetaDescLength = 160
 
+export const mainProfessions = [
+	'Artists',
+	'Entrepreneurs',
+	'Content creators',
+	'Athletes',
+	'Influencers',
+	'Esports athletes',
+]
+
 export const mainProfiles = [
 	{
 		name: 'Anika Brown',

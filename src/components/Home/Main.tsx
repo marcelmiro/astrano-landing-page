@@ -1,9 +1,20 @@
 import classNames from 'classnames'
+import Typewriter, { TypewriterClass } from 'typewriter-effect'
 
-import { mainProfiles } from '@/config'
+import { mainProfessions, mainProfiles } from '@/config'
 import MainProfileCard from '@/components/Home/MainProfileCard'
 import ArrowRight from '@/public/arrow_head_right.svg'
 import styles from '@/styles/Home/Main.module.scss'
+
+const typewriterOnInit = (tw: TypewriterClass) => {
+	const professions = mainProfessions.map((prof) => prof + '.')
+	tw = professions.reduce(
+		(prevTw, profession) =>
+			prevTw.typeString(profession).pauseFor(1000).deleteAll(),
+		tw
+	)
+	return tw.start()
+}
 
 export default function Main() {
 	return (
@@ -11,8 +22,11 @@ export default function Main() {
 			<div className={styles.content}>
 				<h1 className={styles.h1}>Invest in human potential</h1>
 				<h3 className={styles.desc}>
-					Revolutionizing investment and funding through the creation
-					of new asset classes.
+					Discover the next generation of{' '}
+					<Typewriter
+						onInit={typewriterOnInit}
+						options={{ wrapperClassName: styles.typewriterWrapper }}
+					/>
 				</h3>
 				<a
 					className={classNames(styles.button, 'track')}
