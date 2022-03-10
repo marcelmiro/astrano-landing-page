@@ -23,7 +23,7 @@ export default forwardRef(function Footer(
 						<span>Astrano</span>
 					</div>
 					<p>
-						Discover the next generation of high potential
+						Discover the next generation of high-potential
 						individuals.
 					</p>
 				</div>
