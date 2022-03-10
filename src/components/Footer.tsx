@@ -23,7 +23,8 @@ export default forwardRef(function Footer(
 						<span>Astrano</span>
 					</div>
 					<p>
-						#1 service to invest in projects through cryptocurrency
+						Discover the next generation of high potential
+						individuals.
 					</p>
 				</div>
 				<div className={styles.linkContainer}>
