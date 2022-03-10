@@ -43,7 +43,7 @@ export default function Meta({
 			)}
 			<meta property="og:site_name" content="Astrano" />
 			<meta property="og:url" content={processedCanonical} />
-			<meta property="og:image" content="/banner.png" />
+			<meta property="og:image" content="https://astrano.io/banner.png" />
 
 			{/* Twitter meta */}
 			<meta name="twitter:card" content="summary" />
@@ -53,7 +53,10 @@ export default function Meta({
 			)}
 			<meta name="twitter:site" content="@AstranoCrypto" />
 			<meta name="twitter:creator" content="@AstranoCrypto" />
-			<meta name="twitter:image" content="/banner.png" />
+			<meta
+				name="twitter:image"
+				content="https://astrano.io/banner.png"
+			/>
 
 			{/* Favicon */}
 			<link
