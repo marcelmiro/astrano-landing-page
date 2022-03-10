@@ -45,7 +45,10 @@ export default function Home() {
 
 	return (
 		<div className={styles.wrapper}>
-			<Meta title="Astrano | Invest in human potential" />
+			<Meta
+				title="Astrano | Invest in human potential"
+				description="Discover the next generation of high-potential individuals."
+			/>
 
 			{!hideBanner && (
 				<div className={styles.banner}>
