@@ -35,7 +35,7 @@ export function MixpanelProvider({ children }: { children: React.ReactNode }) {
 	useEffect(() => {
 		const key = process.env.NEXT_PUBLIC_MIXPANEL_KEY
 		if (!key) return console.error('Mixpanel key not found')
-		mixpanel.init(key, { loaded: () => setIsLoaded(true), debug: true })
+		mixpanel.init(key, { loaded: () => setIsLoaded(true) })
 	}, [])
 
 	const track: MixpanelContextProps['track'] = useCallback(
