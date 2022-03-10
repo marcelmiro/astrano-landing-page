@@ -76,6 +76,7 @@ export default forwardRef(function Rewards(
 						src={Banner}
 						alt="Banner LILT"
 						objectFit="cover"
+						blur
 					/>
 				</BorderGradient>
 

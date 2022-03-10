@@ -41,6 +41,7 @@ export default function Chains({ className, titleClassName }: ChainsProps) {
 							objectFit="contain"
 							className={styles.icon}
 							key={index}
+							blur
 						/>
 					))}
 				</div>
