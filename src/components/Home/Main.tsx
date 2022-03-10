@@ -6,9 +6,10 @@ import MainProfileCard from '@/components/Home/MainProfileCard'
 import ArrowRight from '@/public/arrow_head_right.svg'
 import styles from '@/styles/Home/Main.module.scss'
 
+const professionList = mainProfessions.join(', ')
+
 const typewriterOnInit = (tw: TypewriterClass) => {
-	const professions = mainProfessions.map((prof) => prof + '.')
-	tw = professions.reduce(
+	tw = mainProfessions.reduce(
 		(prevTw, profession) =>
 			prevTw.typeString(profession).pauseFor(1000).deleteAll(),
 		tw
@@ -21,7 +22,10 @@ export default function Main() {
 		<main className={styles.container}>
 			<div className={styles.content}>
 				<h1 className={styles.h1}>Invest in human potential</h1>
-				<h3 className={styles.desc}>
+				<h3
+					className={styles.desc}
+					aria-label={`Discover the next generation of ${professionList}.`}
+				>
 					Discover the next generation of{' '}
 					<Typewriter
 						onInit={typewriterOnInit}
