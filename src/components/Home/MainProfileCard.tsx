@@ -23,7 +23,6 @@ export default function MainProfileCard({
 				src={banner}
 				alt={'Picture ' + name}
 				className={styles.banner}
-				priority
 				blur
 			/>
 			<div className={styles.content}>
