@@ -24,7 +24,8 @@ export default function Home() {
 	}, [track_links])
 
 	useEffect(() => {
-		const hideBanner = localStorage.getItem('hideBanner') === 'true'
+		if (!window?.localStorage) return
+		const hideBanner = window.localStorage.getItem('hideBanner') === 'true'
 		if (!hideBanner) setHideBanner(false)
 	}, [])
 
@@ -36,7 +37,7 @@ export default function Home() {
 	}
 
 	const closeBanner = () => {
-		localStorage.setItem('hideBanner', 'true')
+		window.localStorage.setItem('hideBanner', 'true')
 		setHideBanner(true)
 	}
 
