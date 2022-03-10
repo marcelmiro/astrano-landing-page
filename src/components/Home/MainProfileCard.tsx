@@ -6,11 +6,11 @@ interface MainProfileProps {
 	name: string
 	symbol: string
 	price: string
-	banner: string
-	logo: string
+	banner: string | StaticImageData
+	logo: string | StaticImageData
 }
 
-export default function MainCard({
+export default function MainProfileCard({
 	name,
 	symbol,
 	price,
@@ -23,12 +23,15 @@ export default function MainCard({
 				src={banner}
 				alt={'Picture ' + name}
 				className={styles.banner}
+				priority
+				blur
 			/>
 			<div className={styles.content}>
 				<SkeletonImage
 					src={logo}
 					alt={'Logo ' + name}
 					className={styles.logo}
+					blur
 				/>
 				<div className={styles.info}>
 					<p className={styles.name}>{name}</p>

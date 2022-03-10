@@ -1,6 +1,11 @@
 import classNames from 'classnames'
 
 import SkeletonImage from '@/components/SkeletonImage'
+import EthIcon from '@/public/eth.png'
+import BscIcon from '@/public/bsc.png'
+import PolygonIcon from '@/public/polygon.png'
+import AvaxIcon from '@/public/avax.png'
+import FantomIcon from '@/public/fantom.png'
 import styles from '@/styles/Home/Chains.module.scss'
 import homeStyles from '@/styles/Home/Home.module.scss'
 
@@ -10,11 +15,11 @@ interface ChainsProps {
 }
 
 const chains = [
-	{ src: '/eth.png', alt: 'Ethereum' },
-	{ src: '/bsc.png', alt: 'Binance Smart Chain' },
-	{ src: '/polygon.png', alt: 'Polygon Chain' },
-	{ src: '/avax.png', alt: 'Avalanche' },
-	{ src: '/fantom.png', alt: 'Fantom Opera' },
+	{ src: EthIcon, alt: 'Ethereum' },
+	{ src: BscIcon, alt: 'Binance Smart Chain' },
+	{ src: PolygonIcon, alt: 'Polygon Chain' },
+	{ src: AvaxIcon, alt: 'Avalanche' },
+	{ src: FantomIcon, alt: 'Fantom Opera' },
 ]
 
 export default function Chains({ className, titleClassName }: ChainsProps) {

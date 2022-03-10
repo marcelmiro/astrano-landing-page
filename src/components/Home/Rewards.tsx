@@ -3,6 +3,7 @@ import classNames from 'classnames'
 
 import BorderGradient from '@/components/BorderGradient'
 import SkeletonImage from '@/components/SkeletonImage'
+import Banner from '@/public/lilt_banner.jpg'
 import styles from '@/styles/Home/Rewards.module.scss'
 
 interface RewardsProps {
@@ -71,7 +72,11 @@ export default forwardRef(function Rewards(
 
 			<div className={styles.container}>
 				<BorderGradient className={styles.banner}>
-					<SkeletonImage src="/lilt_banner.png" alt="Banner LILT" />
+					<SkeletonImage
+						src={Banner}
+						alt="Banner LILT"
+						objectFit="cover"
+					/>
 				</BorderGradient>
 
 				<div className={styles.content}>

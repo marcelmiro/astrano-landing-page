@@ -7,10 +7,12 @@ import styles from '@/styles/Skeleton.module.scss'
 type ObjectFit = 'contain' | 'cover'
 
 interface SkeletonImageProps {
-	src: string
+	src: string | StaticImageData
 	alt: string
 	objectFit?: ObjectFit
 	className?: string
+	priority?: boolean
+	blur?: boolean
 }
 
 export default function SkeletonImage({
@@ -18,9 +20,13 @@ export default function SkeletonImage({
 	alt,
 	objectFit = 'cover',
 	className,
+	priority = false,
+	blur = false,
 }: SkeletonImageProps) {
 	const [isLoaded, setIsLoaded] = useState(false)
 	const [notFound, setNotFound] = useState(false)
+
+	if (blur && typeof src === 'string') blur = false
 
 	return (
 		<div className={classNames(className, styles.container)}>
@@ -40,6 +46,8 @@ export default function SkeletonImage({
 					objectFit={objectFit}
 					onLoadingComplete={() => setIsLoaded(true)}
 					onError={() => setNotFound(true)}
+					priority={priority}
+					{...(blur ? { placeholder: 'blur' } : {})}
 				/>
 			)}
 		</div>

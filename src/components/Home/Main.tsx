@@ -32,10 +32,14 @@ export default function Main() {
 					aria-label={`Discover the next generation of ${professionList}.`}
 				>
 					Discover the next generation of{' '}
-					<Typewriter
-						onInit={typewriterOnInit}
-						options={typewriterOptions}
-					/>
+					{typeof window !== 'undefined' ? (
+						<Typewriter
+							onInit={typewriterOnInit}
+							options={typewriterOptions}
+						/>
+					) : (
+						'high-potential individuals'
+					)}
 				</h3>
 				<a
 					className={classNames(styles.button, 'track')}

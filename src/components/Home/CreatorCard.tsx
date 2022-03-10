@@ -26,17 +26,16 @@ export default function CreatorCard({
 						src={logo}
 						alt={'Logo ' + name}
 						className={styles.logo}
+						blur
 					/>
 					<div className={styles.text}>
 						<p className={styles.name}>{name}</p>
 						<p className={styles.price}>${price}</p>
 					</div>
 				</div>
-				<SkeletonImage
-					src={banner}
-					alt={'Banner ' + name}
-					className={styles.banner}
-				/>
+				<div className={styles.banner}>
+					<SkeletonImage src={banner} alt={'Banner ' + name} blur />
+				</div>
 			</BorderGradient>
 			<h4 className={styles.title}>{category}</h4>
 		</div>
