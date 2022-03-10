@@ -1,5 +1,5 @@
 import classNames from 'classnames'
-import Typewriter, { TypewriterClass } from 'typewriter-effect'
+import Typewriter, { Options, TypewriterClass } from 'typewriter-effect'
 
 import { mainProfessions, mainProfiles } from '@/config'
 import MainProfileCard from '@/components/Home/MainProfileCard'
@@ -17,6 +17,11 @@ const typewriterOnInit = (tw: TypewriterClass) => {
 	return tw.start()
 }
 
+const typewriterOptions: Options = {
+	loop: true,
+	wrapperClassName: styles.typewriterWrapper,
+}
+
 export default function Main() {
 	return (
 		<main className={styles.container}>
@@ -29,7 +34,7 @@ export default function Main() {
 					Discover the next generation of{' '}
 					<Typewriter
 						onInit={typewriterOnInit}
-						options={{ wrapperClassName: styles.typewriterWrapper }}
+						options={typewriterOptions}
 					/>
 				</h3>
 				<a
