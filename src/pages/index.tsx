@@ -24,9 +24,11 @@ export default function Home() {
 	}, [track_links])
 
 	useEffect(() => {
-		if (!window?.localStorage) return
-		const hideBanner = window.localStorage.getItem('hideBanner') === 'true'
-		if (!hideBanner) setHideBanner(false)
+		try {
+			const hideBanner =
+				window.localStorage.getItem('hideBanner') === 'true'
+			if (!hideBanner) setHideBanner(false)
+		} catch (e) {}
 	}, [])
 
 	const scrollToElement = (id: string) => {
