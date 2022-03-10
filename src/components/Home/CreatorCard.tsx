@@ -7,8 +7,8 @@ interface CreatorCardProps {
 	category: string
 	name: string
 	price: string
-	logo: string
-	banner: string
+	logo: string | StaticImageData
+	banner: string | StaticImageData
 }
 
 export default function CreatorCard({
