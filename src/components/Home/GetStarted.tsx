@@ -29,7 +29,7 @@ export default function GetStarted({ className }: GetStartedProps) {
 					</a>
 					<a
 						className={classNames(styles.button, 'track')}
-						href="https://refer.astrano.io/"
+						href="https://pages.viral-loops.com/astrano"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
