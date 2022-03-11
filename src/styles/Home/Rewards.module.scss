@@ -85,10 +85,6 @@
 	border: none;
 	background-color: rgb(var(--purple-accent));
 	cursor: pointer;
-	transition: background-color 0.16s;
-	&:hover {
-		background-color: rgb(var(--purple-accent-500));
-	}
 }
 
 @media screen and (max-width: 1452px) {
