@@ -57,7 +57,7 @@
 	height: 4rem;
 	border-radius: 100%;
 	filter: grayscale(1);
-	transition: all 0.16s;
+	transition: filter 0.15s linear;
 	&:hover {
 		filter: grayscale(0);
 	}
