@@ -79,11 +79,11 @@ export default forwardRef(function Footer(
 						</a>
 						<a
 							className={classNames(styles.link, 'track')}
-							href="https://www.reddit.com/r/Astrano/"
+							href="https://discord.gg/3dRX9S6bkQ"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							Reddit
+							Discord
 						</a>
 					</div>
 					<div className={styles.linkGroup}>
