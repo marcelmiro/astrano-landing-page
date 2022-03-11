@@ -17,14 +17,7 @@ export default function Custom404() {
 				</p>
 				<div className={styles.actions}>
 					<Link href="/">
-						<a
-							className={classNames(
-								styles.button,
-								styles.primaryButton
-							)}
-						>
-							Return home
-						</a>
+						<a className={styles.primaryButton}>Return home</a>
 					</Link>
 					<a
 						className={classNames(styles.button, 'track')}

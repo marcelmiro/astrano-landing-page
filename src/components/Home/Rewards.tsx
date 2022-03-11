@@ -50,9 +50,11 @@ const Reward = ({ name, price, actionName, stockLeft }: RewardProps) => {
 			</div>
 
 			<button
-				className={classNames(styles.rewardAction, {
-					[styles.rewardPrimaryAction]: isPrimaryAction,
-				})}
+				className={
+					isPrimaryAction
+						? styles.rewardPrimaryAction
+						: styles.rewardAction
+				}
 			>
 				{formattedActionName}
 			</button>

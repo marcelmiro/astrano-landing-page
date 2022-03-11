@@ -51,6 +51,7 @@
 	}
 }
 .primaryButton {
+    @extend .button;
 	border: none;
 	background-color: rgb(var(--purple-accent));
 	&:hover {

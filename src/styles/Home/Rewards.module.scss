@@ -82,9 +82,9 @@
 }
 
 .rewardPrimaryAction {
+	@extend .rewardAction;
 	border: none;
 	background-color: rgb(var(--purple-accent));
-	cursor: pointer;
 }
 
 @media screen and (max-width: 1452px) {
