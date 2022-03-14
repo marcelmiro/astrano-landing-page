@@ -43,7 +43,7 @@ export default function Main() {
 				</h3>
 				<a
 					className={classNames(styles.button, 'track')}
-					href="https://0zhj6xg76gq.typeform.com/to/XwWTHlZZ"
+					href="https://astrano.typeform.com/waitlist"
 					target="_blank"
 					rel="noopener noreferrer"
 				>

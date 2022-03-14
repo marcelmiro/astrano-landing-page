@@ -41,7 +41,7 @@ export default function Navbar({ scrollToElement }: NavbarProps) {
 						styles.navButtonBorder,
 						'track'
 					)}
-					href="https://0zhj6xg76gq.typeform.com/to/XwWTHlZZ"
+					href="https://astrano.typeform.com/waitlist"
 					target="_blank"
 					rel="noopener noreferrer"
 				>

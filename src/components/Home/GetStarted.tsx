@@ -17,7 +17,7 @@ export default function GetStarted({ className }: GetStartedProps) {
 				<div className={styles.actions}>
 					<a
 						className={classNames(styles.buttonSecondary, 'track')}
-						href="https://0zhj6xg76gq.typeform.com/to/XwWTHlZZ"
+						href="https://astrano.typeform.com/waitlist"
 						target="_blank"
 						rel="noopener noreferrer"
 					>

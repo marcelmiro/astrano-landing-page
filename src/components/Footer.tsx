@@ -44,7 +44,7 @@ export default forwardRef(function Footer(
 						</button>
 						<a
 							className={classNames(styles.link, 'track')}
-							href="https://0zhj6xg76gq.typeform.com/to/XwWTHlZZ"
+							href="https://astrano.typeform.com/waitlist"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
