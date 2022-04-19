@@ -90,7 +90,7 @@ export default function Home() {
 				ref={(el) => (sections.current.rewards = el)}
 			/>
 
-			<GetStarted className={styles.section} />
+			{/* <GetStarted className={styles.section} /> */}
 
 			<Footer
 				scrollToElement={scrollToElement}
